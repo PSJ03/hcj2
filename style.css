@@ -30,6 +30,9 @@ ul {
   background-color: black;
   color: white;
   height: 60px;
+  max-width: 1000px;
+  margin-left: 355px;
+  align-items: center;
 }
 
 .navbar .container {
