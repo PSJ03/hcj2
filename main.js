@@ -2,6 +2,9 @@ document.getElementById('time').innerHTML = new Date()
 function setClock() {
   const dateInfo = new Date()
 
+  // const weekDays = ['일', '월', '화', '수', '목', '금', '토']
+  // const dayOfWeek = weekDays[now.getDay()] // 숫자를 한글 요일로 변환
+
   // 시간, 분, 초가 10 미만일 때 앞에 0을 붙여 00:00:00 형식 유지
   const year = String(dateInfo.getFullYear()).padStart(2, '0')
   const month = String(dateInfo.getMonth()).padStart(2, '0')
@@ -17,6 +20,8 @@ function setClock() {
     '월 ' +
     day +
     '일 ' +
+    // dayOfWeek +
+    // '요일' +
     hour +
     '시 ' +
     min +
@@ -27,6 +32,7 @@ function setClock() {
 
 // 1초(1000ms)마다 setClock 함수 실행
 setInterval(setClock, 1000)
+updateClock()
 
 function pink() {
   document.body.style.backgroundColor = 'pink'
