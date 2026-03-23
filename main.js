@@ -1,4 +1,33 @@
 document.getElementById('time').innerHTML = new Date()
+function setClock() {
+  const dateInfo = new Date()
+
+  // 시간, 분, 초가 10 미만일 때 앞에 0을 붙여 00:00:00 형식 유지
+  const year = String(dateInfo.getFullYear()).padStart(2, '0')
+  const month = String(dateInfo.getMonth()).padStart(2, '0')
+  const day = String(dateInfo.getDay()).padStart(2, '0')
+  const hour = String(dateInfo.getHours()).padStart(2, '0')
+  const min = String(dateInfo.getMinutes()).padStart(2, '0')
+  const sec = String(dateInfo.getSeconds()).padStart(2, '0')
+
+  document.getElementById('time').innerHTML =
+    year +
+    '년 ' +
+    month +
+    '월 ' +
+    day +
+    '일 ' +
+    hour +
+    '시 ' +
+    min +
+    '분 ' +
+    sec +
+    '초'
+}
+
+// 1초(1000ms)마다 setClock 함수 실행
+setInterval(setClock, 1000)
+
 function pink() {
   document.body.style.backgroundColor = 'pink'
 }
