@@ -8,6 +8,12 @@ function lightblue() {
 function yellow() {
   document.body.style.backgroundColor = 'yellow'
 }
+function gray() {
+  document.body.style.backgroundColor = 'gray'
+}
+function violet() {
+  document.body.style.backgroundColor = 'violet'
+}
 function reset() {
   document.body.style.backgroundColor = 'linen'
 }
