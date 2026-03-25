@@ -11,10 +11,41 @@
         border-color: white;
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="color: white; background-color: black">
-    <table border="1">
-      <caption>
+  <body>
+    <!-- 여기는 메뉴 입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Table Page</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/form.html">Form</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br />
+    <table border="1" style="table-layout: fixed; margin: 0 auto">
+      <caption style="font-weight: bolder">
         상품 구성
       </caption>
       <tr>
@@ -70,7 +101,7 @@
         }
       "
     >
-      <caption>
+      <caption style="color: black; font-weight: bolder">
         시간표
       </caption>
       <tr>
