@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Page</title>
+    <style>
+      .table {
+        border: 2px solid white;
+        border-collapse: collapse;
+        border-color: white;
+      }
+    </style>
+  </head>
+  <body style="color: white; background-color: black">
+    <table border="1">
+      <caption>
+        상품 구성
+      </caption>
+      <tr>
+        <th>용도</th>
+        <th>중량</th>
+        <th>갯수</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td rowspan="2">선물용</td>
+        <td>3kg</td>
+        <td>11-16</td>
+        <td>35,000원</td>
+      </tr>
+      <tr>
+        <td>5kg</td>
+        <td>18-26</td>
+        <td>52,000원</td>
+      </tr>
+      <tr>
+        <td rowspan="2">가정용</td>
+        <td>3kg</td>
+        <td>11-16</td>
+        <td>30,000원</td>
+      </tr>
+      <tr>
+        <td>5kg</td>
+        <td colspan="2">18-26 / 47,000원</td>
+        <!-- <td>47,000원</td> -->
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <table
+      border="1"
+      class="table"
+      width="30%"
+      style="
+        table-layout: fixed;
+        margin: 0 auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+      "
+    >
+      <caption>
+        시간표
+      </caption>
+      <tr>
+        <th>시간</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+      <tr>
+        <td>9:10 ~ 10:00</td>
+        <td
+          rowspan="4"
+          style="background-color: rgb(206, 116, 102); color: white"
+        >
+          취약점진단및평가(캡스톤디자인)
+        </td>
+        <td
+          rowspan="2"
+          style="background-color: rgb(203, 168, 91); color: white"
+        >
+          웹프로그래밍
+        </td>
+        <td></td>
+        <td rowspan="2"></td>
+        <td rowspan="8"></td>
+      </tr>
+      <tr>
+        <td>10:10 ~ 11:00</td>
+        <td
+          rowspan="3"
+          style="background-color: rgb(107, 180, 166); color: white"
+        >
+          클라우드컴퓨팅보안
+        </td>
+      </tr>
+      <tr>
+        <td>11:10 ~ 12:00</td>
+        <td rowspan="3"></td>
+        <td
+          rowspan="2"
+          style="background-color: rgb(106, 142, 200); color: white"
+        >
+          정보보호프로젝트실습1(캡스톤디자인)
+        </td>
+      </tr>
+      <tr>
+        <td>12:10 ~ 01:00</td>
+      </tr>
+      <tr>
+        <td>01:10 ~ 02:00</td>
+        <td></td>
+        <td rowspan="4"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>02:10 ~ 03:00</td>
+        <td
+          rowspan="2"
+          style="background-color: rgb(203, 168, 91); color: white"
+        >
+          웹프로그래밍
+        </td>
+        <td
+          rowspan="3"
+          style="background-color: rgb(144, 173, 97); color: white"
+        >
+          블록체인기술및응용
+        </td>
+        <td
+          rowspan="2"
+          style="background-color: rgb(106, 142, 200); color: white"
+        >
+          정보보호프로젝트실습1(캡스톤디자인)
+        </td>
+      </tr>
+      <tr>
+        <td>03:10 ~ 04:00</td>
+      </tr>
+      <tr>
+        <td>04:10 ~ 05:00</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
